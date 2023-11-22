@@ -16,37 +16,36 @@
 
 ##     <p align = "left"> Introduction 📚 </p>
 
-This project is a web application that perform object detection on images. It marks the objects location with bounding boxes along with the object label and confidence level. 
-YOLOv3 is used in this model for detecting objects. It can detect 80 different objects. YOLO (You Only Look Once) is a real-time object detection algorithm which can detect multiple 
-objects present in the image in real-time.
+Many dog owners have to leave their pets alone at home and have to regularly check how their dog is which is not an easy task. This project is a real-time dog emotion detector which tells whether dog is happy, sad, relaxed or angry. With this project, dog owner can be notified when their dog is not feeling well or is angry because someone breaks into the house and then he/she can take a suitable step. The model used in the project is built from scratch on dog-emotion dataset available on kaggle.  
+
+<br>
+
+##     <p align = "left">About CNN_Model💻 </p>
+
+The system utilizes the model made from scratch. <br>Model uses 4 convolutional block(each block contains 2 Conv2D layers followed by a maxpooling layer) where filters used in blocks are 64, 128, 256 and 512 resp. after which a flatten layer is used which make the output of last convolutional block one-dimentional. Then 3 dense layers of 256, 128, 64 units resp. is used followed by a dense layer of 4 units and activation softmax to determine the emotion from the frame. Diagram for illustration is given below:<br>
+
+![dog_emotion](https://github.com/prajwal-code2/dogs-emotion/assets/74657725/8fda3d39-9e79-4417-850e-d131af2b52b2)
+
+<br>
+
+![model_architecture](https://github.com/prajwal-code2/dogs-emotion/assets/74657725/5ea92473-d63b-46d4-840e-f1a930a337cc)
+
+
 <br>
 
 ##     <p align = "left"> Features ⭐ </p>
- -  Real-time detection of different objects.
- -  Utilizes the powerful YOLOv3 model for object detection.
+ -  Real-time emotion detector for dogs.
+ -  Can be used for other animals as well after few modification.
 
 <br>
 
 ##     <p align = "left"> Installation and Usage 🛠️ </p>
 1. Clone this repository to your local machine .
-2. Download the weight for YOLOv3 with link given in get_weights.txt .
-3. Run the script 'app.py'
-4. Open the program in web browser by pressing 'CTRL + left click' on the link.
-5. After brower gets open, choose the image on which you want to perform object detection.
-6. Then press on upload.
-7. You can also check the demo video given below.
-
-<br>
-
-##     <p align = "left"> DEMO Video </p>
-
-https://github.com/prajwal-code2/Object-Detection-with-YOLO/assets/74657725/4ad26d36-a9db-4316-bb31-0841513cc710
-
-
-<br>
-
-##     <p align = "left"> Acknowledgements </p>
-I'd like to express my gratitude to the creators of the YOLOv3 model, as their work served as the foundation for this project.
+2. Download the kaggle dog-emotion dataset from the link given in 'Dog Emotion' folder in the repository.
+3. Run each cell of emotion_detector.ipynb and save the model in file after training is completed. 
+4. Place the camera so that your dog is visible.
+5. Run the script 'python use_model.py'.
+6. The tool will then use your computer's camera to monitor the dog emotion.
 
 <br>
 
