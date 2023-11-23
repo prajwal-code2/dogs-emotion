@@ -22,7 +22,7 @@ Many dog owners have to leave their pets alone at home and have to regularly che
 
 ##     <p align = "left">About CNN_Model💻 </p>
 
-The system utilizes the model made from scratch. <br>Model uses 4 convolutional block(each block contains 2 Conv2D layers followed by a maxpooling layer) where filters used in blocks are 64, 128, 256 and 512 resp. after which a flatten layer is used which make the output of last convolutional block one-dimentional. Then 3 dense layers of 256, 128, 64 units resp. is used followed by a dense layer of 4 units and activation softmax to determine the emotion from the frame. Diagram for illustration is given below:<br>
+The system utilizes the model made from scratch. <br>Model uses 4 convolutional block(each block contains 2 Conv2D layers followed by a maxpooling layer) where filters used in blocks are 64, 128, 256 and 512 resp. after which a flatten layer is used which make the output of last convolutional block one-dimentional. Then 3 dense layers of 256, 128, 64 units resp. is used followed by a dense layer of 4 units and activation softmax to determine the emotion from the frame.<br> Diagram for illustration is given below:<br>
 
 ![dog_emotion](https://github.com/prajwal-code2/dogs-emotion/assets/74657725/8fda3d39-9e79-4417-850e-d131af2b52b2)
 
