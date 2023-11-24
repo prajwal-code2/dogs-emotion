@@ -49,6 +49,18 @@ The system utilizes the model made from scratch. <br>Model uses 4 convolutional 
 
 <br>
 
+##     <p align = "left"> DEMO Video 📹 </p>
+
+<br>
+
+
+
+https://github.com/prajwal-code2/dogs-emotion/assets/74657725/990fde01-6dab-4d6a-9fa3-50b12b6d12eb
+
+
+
+<br>
+
 ### <p align ="center"> Do remember to star ⭐ the repository if you like what you see!</p>
 
 ---
